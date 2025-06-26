@@ -1,0 +1,19 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include frappepilot *.css
+recursive-include frappepilot *.csv
+recursive-include frappepilot *.html
+recursive-include frappepilot *.ico
+recursive-include frappepilot *.js
+recursive-include frappepilot *.json
+recursive-include frappepilot *.md
+recursive-include frappepilot *.png
+recursive-include frappepilot *.py
+recursive-include frappepilot *.svg
+recursive-include frappepilot *.txt
+recursive-exclude frappepilot *.pyc
+
