@@ -1,0 +1,134 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2025-06-24 12:26:00.000000",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "user",
+  "timestamp",
+  "user_input",
+  "intent",
+  "entities",
+  "action_executed",
+  "status",
+  "assistant_response",
+  "error_message",
+  "execution_time",
+  "ollama_prompt",
+  "ollama_response"
+ ],
+ "fields": [
+  {
+   "default": "AI-CMD-.YYYY.-.MM.-.DD.-.#####",
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Naming Series",
+   "options": "AI-CMD-.YYYY.-.MM.-.DD.-.#####",
+   "reqd": 1
+  },
+  {
+   "fieldname": "user",
+   "fieldtype": "Link",
+   "label": "User",
+   "options": "User",
+   "reqd": 1
+  },
+  {
+   "default": "now",
+   "fieldname": "timestamp",
+   "fieldtype": "Datetime",
+   "label": "Timestamp",
+   "reqd": 1
+  },
+  {
+   "fieldname": "user_input",
+   "fieldtype": "Long Text",
+   "label": "User Input",
+   "reqd": 1
+  },
+  {
+   "fieldname": "intent",
+   "fieldtype": "Data",
+   "label": "Intent"
+  },
+  {
+   "fieldname": "entities",
+   "fieldtype": "JSON",
+   "label": "Entities"
+  },
+  {
+   "fieldname": "action_executed",
+   "fieldtype": "Data",
+   "label": "Action Executed"
+  },
+  {
+   "default": "Processing",
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Processing\nSuccess\nFailed\nDenied"
+  },
+  {
+   "fieldname": "assistant_response",
+   "fieldtype": "Long Text",
+   "label": "Assistant Response"
+  },
+  {
+   "fieldname": "error_message",
+   "fieldtype": "Text",
+   "label": "Error Message"
+  },
+  {
+   "fieldname": "execution_time",
+   "fieldtype": "Float",
+   "label": "Execution Time (seconds)"
+  },
+  {
+   "fieldname": "ollama_prompt",
+   "fieldtype": "Long Text",
+   "label": "Ollama Prompt"
+  },
+  {
+   "fieldname": "ollama_response",
+   "fieldtype": "Long Text",
+   "label": "Ollama Response"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-06-24 12:26:00.000000",
+ "modified_by": "Administrator",
+ "module": "FrappePilot",
+ "name": "AI Command Log",
+ "naming_rule": "By Naming Series",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "read": 1,
+   "role": "All"
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}
+

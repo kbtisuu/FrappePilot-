@@ -1,0 +1,60 @@
+<div class="frappepilot-chat-container">
+	<div class="chat-header">
+		<h3>
+			<i class="fa fa-robot"></i>
+			FrappePilot - AI Assistant
+		</h3>
+		<div class="chat-status">
+			<span class="status-indicator" id="status-indicator"></span>
+			<span id="status-text">Connecting...</span>
+		</div>
+	</div>
+	
+	<div class="chat-messages" id="chat-messages">
+		<div class="message assistant-message">
+			<div class="message-avatar">
+				<i class="fa fa-robot"></i>
+			</div>
+			<div class="message-content">
+				<p>Hello! I'm FrappePilot, your AI assistant for ERPNext. How can I help you today?</p>
+				<small class="message-time">Just now</small>
+			</div>
+		</div>
+	</div>
+	
+	<div class="chat-input-container">
+		<div class="input-group">
+			<input type="text" 
+				   class="form-control" 
+				   id="chat-input" 
+				   placeholder="Type your message here..."
+				   autocomplete="off">
+			<div class="input-group-append">
+				<button class="btn btn-primary" id="send-button" type="button">
+					<i class="fa fa-paper-plane"></i>
+				</button>
+			</div>
+		</div>
+		<div class="chat-suggestions" id="chat-suggestions">
+			<button class="suggestion-btn" data-suggestion="Show me my stock levels">
+				Show me my stock levels
+			</button>
+			<button class="suggestion-btn" data-suggestion="Create a new sales order">
+				Create a new sales order
+			</button>
+			<button class="suggestion-btn" data-suggestion="Get customer information">
+				Get customer information
+			</button>
+		</div>
+	</div>
+	
+	<div class="chat-typing" id="chat-typing" style="display: none;">
+		<div class="typing-indicator">
+			<span></span>
+			<span></span>
+			<span></span>
+		</div>
+		<span>FrappePilot is typing...</span>
+	</div>
+</div>
+
